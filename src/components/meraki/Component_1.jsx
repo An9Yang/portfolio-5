@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Component_1({ onMenuToggle, isMenuOpen }) {
   return (
     <div
@@ -5,9 +7,8 @@ function Component_1({ onMenuToggle, isMenuOpen }) {
       data-frz-id="2akuwwlrfst"
       data-component-id="Component_1"
     >
-      <a
-        aria-current="page"
-        href="https://meraki-template.webflow.io/"
+      <Link
+        to="/"
         className="nav__brand w-inline-block w--current"
         data-frz-id="2pi1pyi66y6"
       >
@@ -18,7 +19,7 @@ function Component_1({ onMenuToggle, isMenuOpen }) {
           className="nav__brand-img"
           data-frz-id="spvzfc2dr5"
         />
-      </a>
+      </Link>
       <button
         className={`menu-button ${isMenuOpen ? 'menu-button--active' : ''}`}
         data-frz-id="tovi7qf0lum"

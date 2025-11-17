@@ -236,3 +236,18 @@
 }
 
 /* Vertical Marquee Animation is defined in extracted-styles.css */
+
+/* Practices Page Marquee Animation */
+.practices-marquee-track {
+  animation: marqueeHorizontal 25s linear infinite !important;
+  transform: none !important;
+}
+
+@keyframes marqueeHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

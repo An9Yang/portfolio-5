@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Component_4() {
   return (
     <div
@@ -11,8 +13,8 @@ function Component_4() {
           beautiful, forward-thinking spaces that insipire and improve life and
           work.
         </h1>
-        <a
-          href="https://meraki-template.webflow.io/about"
+        <Link
+          to="/about"
           className="button w-inline-block"
           data-frz-id="pr43xoi64h"
         >
@@ -33,7 +35,7 @@ function Component_4() {
             </div>
           </div>
           <div className="button__bullet" data-frz-id="2no4qpp0r8a"></div>
-        </a>
+        </Link>
       </div>
     </div>
   );
