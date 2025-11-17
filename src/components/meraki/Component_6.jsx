@@ -15,10 +15,6 @@ function Component_6() {
           Architects
         </h2>
         <Component_6_1 />
-        <div
-          className="w-embed-youtubevideo youtube"
-          data-frz-id="bemv3qvsnzr"
-        ></div>
         <Component_6_2 />
       </div>
     </div>
