@@ -12,7 +12,7 @@ function Component_2_1({ isOpen }) {
         <div className={`menu__marquee ${isOpen ? 'menu__marquee--visible' : ''}`} data-frz-id="e5omt2vnzso">
           <div className="marquee" data-frz-id="pcrkqarks5">
             <div
-              marquee="horizontal"
+              data-marquee="horizontal"
               className="marquee__track"
               data-frz-id="zn0qv2zsfc"
             >

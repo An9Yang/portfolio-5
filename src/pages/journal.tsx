@@ -48,7 +48,7 @@ const articles = [
     id: 'fosetsik-museum',
     title: 'Meraki designs the new gallery at Fosetsik Museum',
     topic: 'Inside',
-    image: 'https://images.unsplash.com/photo-1529429617124-aee5f4ae7890?auto=format&fit=crop&w=1600&q=80',
+    image: 'https://cdn.prod.website-files.com/68aef5f81395ce7c0c491df2/68b0887396e23c5fa4c9f9c7_thumb-lukiye.avif',
     imageShape: 'circle'
   },
   {
