@@ -6,6 +6,11 @@ export type Project = {
   category: string;
   status: 'Completed' | 'In Progress';
   gallery: string[];
+  location?: string;
+  client?: string;
+  practices?: string[];
+  longDescription?: string;
+  additionalText?: string[];
 };
 
 export const projectCategories = [
@@ -42,6 +47,15 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=2000&q=80',
     category: 'Civic & Culture',
     status: 'Completed',
+    location: 'Stavanger, Norway',
+    client: 'Stavanger City',
+    practices: ['Architecture', 'Interior Design'],
+    longDescription: 'The National Museum in Stavanger serves as the centerpiece of Norwegian culture, bringing together art, history, and heritage under one roof. Designed as a landmark institution, it reflects both tradition and innovation while celebrating the nation\'s cultural identity on a global stage.',
+    additionalText: [
+      'Vestibulum in augue in nunc commodo faucibus. Pellentesque venenatis nec sem eget bibendum. Donec convallis laoreet metus nec semper. Duis posuere urna lacus, non aliquet neque laoreet rhoncus. Phasellus vestibulum nulla risus, non feugiat dui vestibulum ut. Pellentesque ullamcorper nisl et hendrerit sodales. Phasellus at nisi tristique tortor tristique semper sit.',
+      'Nulla ut leo faucibus ipsum tristique volutpat vitae eget diam. Ut eget justo a risus blandit finibus. Phasellus id libero suscipit, tempus nulla eu, faucibus urna. Aliquam porta tempor vehicula. Suspendisse potenti.',
+      'Fusce pellentesque eros sed luctus sagittis. Praesent in neque purus. Suspendisse potenti. Maecenas eget consequat lacus. Phasellus malesuada felis quam, nec gravida sapien fermentum eget. Sed tellus felis, maximus eget lorem eu, ultricies euismod libero. Integer euismod ex tellus, quis vulputate lectus placerat id. Sed eget augue sodales, fringilla nibh scelerisque, feugia.'
+    ],
     gallery: [
       'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=2000&q=80',
       'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=2000&q=80',
