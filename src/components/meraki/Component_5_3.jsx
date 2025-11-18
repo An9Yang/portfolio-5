@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 function Component_5_3() {
   return (
-    <a
-      href="https://meraki-template.webflow.io/project/aon-florest-masterplan"
+    <Link
+      to="/project/aon-florest"
       className="projects__img w-inline-block"
       data-frz-id="9mehefxzgnk"
       data-component-id="Component_5_3"
@@ -28,7 +30,7 @@ function Component_5_3() {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

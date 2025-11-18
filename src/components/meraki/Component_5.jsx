@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Component_5_1 from './Component_5_1';
 import Component_5_2 from './Component_5_2';
 import Component_5_3 from './Component_5_3';
@@ -30,8 +31,8 @@ function Component_5() {
             data-frz-id="opnz7x7relf"
           >
             <Component_5_1 />
-            <a
-              href="https://meraki-template.webflow.io/project/46-hudson-yards"
+            <Link
+              to="/project/hudson-yards"
               className="projects__label w-inline-block"
               data-frz-id="e6qnilaqsyi"
             >
@@ -44,7 +45,7 @@ function Component_5() {
               >
                 A distinctive tower that sits within New York's urban grid.
               </div>
-            </a>
+            </Link>
           </div>
           <div
             role="listitem"
@@ -52,8 +53,8 @@ function Component_5() {
             data-frz-id="zzs64wkl4vm"
           >
             <Component_5_2 />
-            <a
-              href="https://meraki-template.webflow.io/project/lukiye-national-museum"
+            <Link
+              to="/project/lukiye-museum"
               className="projects__label w-inline-block"
               data-frz-id="x20pj1ilrwp"
             >
@@ -66,7 +67,7 @@ function Component_5() {
               >
                 The centerpiece of Norwegian culture in Stavanger.
               </div>
-            </a>
+            </Link>
           </div>
           <div
             role="listitem"
@@ -74,8 +75,8 @@ function Component_5() {
             data-frz-id="13sqdvdg817l"
           >
             <Component_5_3 />
-            <a
-              href="https://meraki-template.webflow.io/project/aon-florest-masterplan"
+            <Link
+              to="/project/aon-florest"
               className="projects__label w-inline-block"
               data-frz-id="1ison4ptrvw"
             >
@@ -88,7 +89,7 @@ function Component_5() {
               >
                 A modern representation of the 21th century in Shanghai.
               </div>
-            </a>
+            </Link>
           </div>
           <div
             role="listitem"
@@ -96,8 +97,8 @@ function Component_5() {
             data-frz-id="vtm2h70stuh"
           >
             <Component_5_4 />
-            <a
-              href="https://meraki-template.webflow.io/project/lee-tompson-institute"
+            <Link
+              to="/project/lee-institute"
               className="projects__label w-inline-block"
               data-frz-id="bzi4qhyejml"
             >
@@ -110,13 +111,13 @@ function Component_5() {
               >
                 A new center for innovation in the heart of Silicon Valley.
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="spacer-regular" data-frz-id="e7boz3rprjb"></div>
-      <a
-        href="https://meraki-template.webflow.io/projects"
+      <Link
+        to="/projects"
         className="button w-inline-block"
         data-frz-id="9a97sgcsyb"
       >
@@ -137,7 +138,7 @@ function Component_5() {
           </div>
         </div>
         <div className="button__bullet" data-frz-id="3szqizbqiac"></div>
-      </a>
+      </Link>
     </div>
   );
 }

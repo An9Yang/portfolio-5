@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 function Component_5_2() {
   return (
-    <a
-      href="https://meraki-template.webflow.io/project/lukiye-national-museum"
+    <Link
+      to="/project/lukiye-museum"
       className="projects__img w-inline-block"
       data-frz-id="0v9fs38brk8b"
       data-component-id="Component_5_2"
@@ -28,7 +30,7 @@ function Component_5_2() {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

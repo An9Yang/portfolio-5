@@ -99,100 +99,76 @@ function ProjectPage() {
 
         <main className="sections" data-frz-id="5t2kfugyg84">
           {/* Hero Section with Image and Title */}
-          <section className="hero" data-frz-id="l0sg4kmrbu" style={{ position: 'relative' }}>
-            <img
-              alt={project.title}
-              loading="lazy"
-              src={heroImage}
-              className="hero__img"
-              data-frz-id="94hyknhv6bu"
-            />
+          <section style={{ position: 'relative', marginBottom: '4rem' }}>
+            <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '14px' }}>
+              <img
+                alt={project.title}
+                loading="lazy"
+                src={heroImage}
+                style={{ width: '100%', height: '72vh', objectFit: 'cover', display: 'block' }}
+              />
 
-            {/* Project Title Overlay */}
-            <div style={{
-              position: 'absolute',
-              top: '40px',
-              left: '40px',
-              zIndex: 10
-            }}>
-              <h1 className="heading-large" style={{ color: 'white', textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}>
-                {project.title}
-              </h1>
-            </div>
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.05) 100%)'
+                }}
+              ></div>
 
-            {/* Bottom Horizontal Marquee */}
-            <div className="hero__horizontal-marquee" data-frz-id="jhry8jmdfot">
-              <div className="marquee" data-frz-id="ivgn7393f0h">
-                <div
-                  data-marquee="horizontal"
-                  className="marquee__track"
-                  data-frz-id="n0ss7srzjr"
-                >
-                  <div className="marquee__item" data-frz-id="hn9xo4x0lr8">
-                    <div className="text-tiny for--marquee" data-frz-id="80epjz519ka">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="zcm25vqgxa">
-                      *
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="dpbyn81ko7a">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="5zqbvmpeo3q">
-                      *
-                    </div>
-                  </div>
-                  <div className="marquee__item" data-frz-id="w5m5gf4lx88">
-                    <div className="text-tiny for--marquee" data-frz-id="bdj1cdskoro">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="wumfqwija2">
-                      *
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="9cdshvxo5n9">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="4o4xogbpu9">
-                      *
-                    </div>
-                  </div>
-                  <div className="marquee__item" data-frz-id="657bso9pslq">
-                    <div className="text-tiny for--marquee" data-frz-id="85ak5lc2h47">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="4np2d75k9vu">
-                      *
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="lx22387qdkm">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="pkty0n1vu7">
-                      *
-                    </div>
-                  </div>
-                  <div className="marquee__item" data-frz-id="7uv9hw50xhx">
-                    <div className="text-tiny for--marquee" data-frz-id="at70npzurho">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="s5svudgpy9q">
-                      *
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="p3v891ecimr">
-                      A landmark celebrating Norwegian culture, heritage, and community
-                    </div>
-                    <div className="text-tiny for--marquee" data-frz-id="2brpbxfn0q">
-                      *
-                    </div>
-                  </div>
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '40px',
+                  bottom: '40px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '0.75rem',
+                  color: 'white',
+                }}
+              >
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  <span
+                    className="tag"
+                    style={{
+                      backgroundColor: 'rgba(255,255,255,0.9)',
+                      color: '#1a1a1a',
+                      border: '1px solid rgba(255,255,255,0.4)',
+                      padding: '0.35rem 0.9rem'
+                    }}
+                  >
+                    <span className="text-small">{project.category}</span>
+                  </span>
+                  <span
+                    className="tag square"
+                    style={{
+                      backgroundColor: 'rgba(26,26,26,0.85)',
+                      color: 'white',
+                      border: '1px solid rgba(255,255,255,0.4)',
+                      padding: '0.35rem 0.9rem'
+                    }}
+                  >
+                    <span className="text-small">{project.status}</span>
+                  </span>
                 </div>
+                <h1
+                  className="heading-large"
+                  style={{
+                    margin: 0,
+                    fontWeight: 500,
+                    textShadow: '0 8px 28px rgba(0,0,0,0.35)',
+                    maxWidth: '760px',
+                    lineHeight: 1.05
+                  }}
+                >
+                  {project.title}
+                </h1>
               </div>
             </div>
           </section>
 
-          <div className="spacer-huge" data-frz-id="wgndpta4no"></div>
-
           {/* Project Info Grid Section */}
-          <section style={{ paddingBottom: '4rem' }}>
+          <section style={{ paddingBottom: '3rem' }}>
             <div style={{
               maxWidth: '1440px',
               margin: '0 auto',
@@ -202,20 +178,20 @@ function ProjectPage() {
               gap: '4rem',
             }}>
               <div>
-                <h3 className="heading-tiny" style={{ marginBottom: '1rem' }}>
+                <h3 className="heading-tiny" style={{ marginBottom: '0.75rem' }}>
                   Sectors
                 </h3>
-                <p className="text-regular">
+                <p className="text-regular c1-60">
                   {project.category}
                 </p>
               </div>
 
               {project.location && (
                 <div>
-                  <h3 className="heading-tiny" style={{ marginBottom: '1rem' }}>
+                  <h3 className="heading-tiny" style={{ marginBottom: '0.75rem' }}>
                     Location
                   </h3>
-                  <p className="text-regular">
+                  <p className="text-regular c1-60">
                     {project.location}
                   </p>
                 </div>
@@ -223,20 +199,20 @@ function ProjectPage() {
 
               {project.client && (
                 <div>
-                  <h3 className="heading-tiny" style={{ marginBottom: '1rem' }}>
+                  <h3 className="heading-tiny" style={{ marginBottom: '0.75rem' }}>
                     Client
                   </h3>
-                  <p className="text-regular">
+                  <p className="text-regular c1-60">
                     {project.client}
                   </p>
                 </div>
               )}
 
               <div>
-                <h3 className="heading-tiny" style={{ marginBottom: '1rem' }}>
+                <h3 className="heading-tiny" style={{ marginBottom: '0.75rem' }}>
                   Status
                 </h3>
-                <p className="text-regular">
+                <p className="text-regular c1-60">
                   {project.status}
                 </p>
               </div>
@@ -254,11 +230,19 @@ function ProjectPage() {
                 <h3 className="heading-tiny" style={{ marginBottom: '1.5rem' }}>
                   Practices
                 </h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                   {project.practices.map((practice) => (
-                    <p key={practice} className="text-regular" style={{ color: 'rgba(26, 26, 26, 0.6)' }}>
-                      {practice}
-                    </p>
+                    <span
+                      key={practice}
+                      className="tag"
+                      style={{
+                        backgroundColor: '#f8f8f8',
+                        border: '1px solid #dcdcdc',
+                        padding: '0.35rem 0.9rem'
+                      }}
+                    >
+                      <span className="text-small">{practice}</span>
+                    </span>
                   ))}
                 </div>
               </div>
@@ -268,22 +252,20 @@ function ProjectPage() {
           <div className="spacer-huge" data-frz-id="348npvsea8q"></div>
 
           {/* Long Description Section */}
-          {project.longDescription && (
-            <section style={{ paddingBottom: '4rem' }}>
-              <div style={{
-                maxWidth: '1440px',
-                margin: '0 auto',
-                padding: '0 40px',
+          <section style={{ paddingBottom: '4rem' }}>
+            <div style={{
+              maxWidth: '1440px',
+              margin: '0 auto',
+              padding: '0 40px',
+            }}>
+              <p className="text-large" style={{
+                maxWidth: '900px',
+                lineHeight: '1.6'
               }}>
-                <p className="text-large" style={{
-                  maxWidth: '900px',
-                  lineHeight: '1.6'
-                }}>
-                  {project.longDescription}
-                </p>
-              </div>
-            </section>
-          )}
+                {project.longDescription || project.summary || project.description}
+              </p>
+            </div>
+          </section>
 
           {/* Additional Text Sections */}
           {project.additionalText && project.additionalText.length > 0 && (
@@ -324,7 +306,7 @@ function ProjectPage() {
                   flexDirection: 'column',
                   gap: '2rem'
                 }}>
-                  {secondaryImages.map((src, idx) => (
+                  {secondaryImages.slice(0, 1).map((src, idx) => (
                     <div key={src + idx} className="projects__img w-inline-block" data-frz-id="mq4qy58jls">
                       <img
                         loading="lazy"
@@ -332,7 +314,7 @@ function ProjectPage() {
                         alt={`${project.title} view ${idx + 2}`}
                         className="thumbnail"
                         data-frz-id="s2r2sw469al"
-                        style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+                        style={{ objectFit: 'cover', width: '100%', height: 'auto', borderRadius: '12px' }}
                       />
                     </div>
                   ))}
@@ -385,7 +367,7 @@ function ProjectPage() {
 
                 <div style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(2, 1fr)',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
                   gap: '2rem'
                 }}>
                   {relatedProjects.map((relProject) => (

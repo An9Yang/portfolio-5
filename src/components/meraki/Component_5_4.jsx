@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 function Component_5_4() {
   return (
-    <a
-      href="https://meraki-template.webflow.io/project/lee-tompson-institute"
+    <Link
+      to="/project/lee-institute"
       className="projects__img w-inline-block"
       data-frz-id="5yeg6at0ns"
       data-component-id="Component_5_4"
@@ -28,7 +30,7 @@ function Component_5_4() {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
